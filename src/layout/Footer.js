@@ -49,6 +49,12 @@ export default function Footer() {
 
             <div className='footerBottom text-center'>
                 <div className='container'>
+                    <div className='socialIcons'>
+                        <ul className='d-flex gap-3 justify-content-center mb-3'>
+                            <li><Link href='#'><i class="lni lni-facebook"></i></Link></li>
+                            <li><Link href='#'><i class="lni lni-instagram"></i></Link></li>
+                        </ul>
+                    </div>
                     <h5 className='fw-regular text-white mb-2'>© 2024 BREWERY HOURS. ALL RIGHTS RESERVED. WEBSITE DESIGN + DEVELOPMENT BY JASONHUNTER DESIGN.</h5>
                     <ul className='d-flex flex-wrap flex-md-nowrap flex footerLinks align-items-center justify-content-center fw-regular text-white h5 mb-0 text-center'>
                         <li><Link href='#'>MARKETING COLLATERAL</Link></li>

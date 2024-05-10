@@ -3,10 +3,22 @@
 import BreweryItem from "@/components/BreweryItem";
 import Image from "next/image";
 import ads from '@/assets/img/ads.jpg'
-
+import HomeSearch from "@/components/HomeSearch";
+import GoogleMap from "@/components/GoogleMap";
 export default function Home() {
+
   return (
     <main>
+
+      <GoogleMap/>
+      
+      <div>
+        <div className="container">
+          <HomeSearch />
+        </div>
+      </div>
+
+
       <div className="p-10">
         <div className="container-fluid">
           <div className="row">

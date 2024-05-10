@@ -198,6 +198,9 @@ hr {
     position: relative;
     height: auto;
     font-family: 'Brandon Grotesque Medium';
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
+    appearance: auto;
 }
 
 .form-control:focus {
@@ -359,6 +362,10 @@ hr {
     display: block;
 }
 
+.navBox li a:hover {
+    color: #000;
+}
+
 .appBar {
     position: relative;
     padding: 10px;
@@ -477,9 +484,72 @@ footer {
     left: 50%;
 }
 
+.socialIcons ul li a {
+    color: #fff;
+    border-radius: 50%;
+    display: block;
+    border: solid 2px #fff;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.socialIcons ul li a i.lni {
+    font-size: 20px;
+}
 
+.socialIcons ul li a:hover {
+    background-color: #fff;
+    color: #f3b818;
+}
 
+.formBox {
+    padding: 40px 4vw;
+    border-radius: 4px;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.formBoxHold {
+    position: relative;
+}
+
+.formBoxHold::after {
+    content: " ";
+    background: url(../img/box-shadow.png) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-position: bottom center;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: -17px;
+}
+.googleMap{
+    aspect-ratio: 1/.4;
+    background-color: #e7e7e7;
+}
+.homeSearch{
+    margin-top: -115px;
+}
+.mapText {
+    font-size: 50px;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+    color: #dddddd;
+}
 @media (max-width: 1600px) {
     .container-fluid {
         padding: 0px 60px;
@@ -551,6 +621,11 @@ footer {
         font-size: 16px;
         line-height: 1.5em;
     }
+    .formBoxHold::after {
+
+        margin-top: -22px;
+        background-size: 1199px auto;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -603,6 +678,45 @@ footer {
     .beerImg img {
         width: 120%;
     }
+
+    .logo {
+        margin: 8px 0;
+    }
+
+    .navBox {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        right: 0;
+        z-index: 9;
+        background-color: #f3b818;
+        padding-bottom: 10px;
+        display: none;
+    }
+
+    .navBox.open {
+        display: block;
+    }
+
+    .navBox li {
+        font-size: 17px;
+        line-height: normal;
+        margin: 10px 0 15px 0;
+        text-align: center;
+    }
+
+    .menuIcon {
+        cursor: pointer;
+    }
+
+    .menuIcon i.lni {
+        font-size: 30px;
+        color: #fff;
+    }
+    .formBoxHold::after {
+        margin-top: -25px;
+        background-size: 992px auto;
+    }
 }
 
 
@@ -610,25 +724,41 @@ footer {
     .container-fluid {
         padding: 0px 25px;
     }
+
     .beerImg {
         max-width: 220px;
         margin: 0 auto
     }
+
     .breweryBox {
         padding: 30px 20px;
     }
-    .breweryBox h5{
+
+    .breweryBox h5 {
         font-size: 11px;
     }
+
     .breweryBoxImg {
         max-width: 120px;
         padding: 7px;
         margin-left: -40px;
     }
+
     .footerLinks li {
         margin-bottom: 8px;
     }
-
+    .formBoxHold::after {
+        margin-top: -32px;
+        background-size: 575px auto;
+    }
+    .formBox {
+        padding: 30px;
+    }
 }
 
-@media (max-width:575.98px) {}
+@media (max-width:575.98px) {
+    .formBoxHold::after {
+        margin-top: -35px;
+        background-size: 370px auto;
+    }
+}

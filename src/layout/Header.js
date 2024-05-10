@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -9,10 +9,40 @@ import appleStore from '@/assets/img/app-store-download.png'
 import googleStore from '@/assets/img/google-app-img.png'
 
 export default function Header() {
+    const [announcement, setAnnouncement] = useState({
+        display: 'block'
+    })
+    const [appStore, setAppStore] = useState({
+        display: 'block'
+    })
+    const [mobileMenu, setMobileMenu] = useState(null)
+
+
+    const closeAnnouncemnet = () => {
+        setAnnouncement({
+            display: 'none'
+        })
+    }
+
+    const closeAppStore = () => {
+        setAppStore({
+            display: 'none'
+        })
+    }
+    const handleMobileMenu = () => {
+        if (mobileMenu === null) {
+            setMobileMenu('open')
+        }
+        else {
+            setMobileMenu(null)
+        }
+
+    }
+
     return (
         <header>
 
-            <div className='announcementBar'>
+            <div className='announcementBar' style={announcement}>
                 <div className='container-fluid'>
                     <div className='d-flex flex-column flex-sm-row align-items-center justify-content-center gap-1 gap-sm-3'>
                         <div className='d-flex gap-2 align-items-center'>
@@ -30,10 +60,10 @@ export default function Header() {
                         <div><Link href='' className='btn btn-sm btn-primary'>Modify Subscription</Link></div>
                     </div>
                 </div>
-                <div className='closeBtn'><i className="lni lni-cross-circle text-white"></i></div>
+                <div className='closeBtn' onClick={closeAnnouncemnet}><i className="lni lni-cross-circle text-white"></i></div>
             </div>
 
-            <div className='navArea bg-primary'>
+            <div className='navArea bg-primary position-relative'>
                 <div className='container-fluid'>
                     <div className='d-flex justify-content-between align-items-center'>
                         <div className='logo'>
@@ -45,8 +75,8 @@ export default function Header() {
                                 />
                             </Link>
                         </div>
-                        <div className='navBox'>
-                            <ul className='d-flex'>
+                        <div className={`navBox ${mobileMenu}`}>
+                            <ul className='d-lg-flex'>
                                 <li><Link href="#">The Breweries</Link></li>
                                 <li><Link href="#">Upcoming Events</Link></li>
                                 <li><Link href="#">Brewery Pricing</Link></li>
@@ -55,32 +85,35 @@ export default function Header() {
                                 <li><Link href="#">Log Out</Link></li>
                             </ul>
                         </div>
+                        <div className='menuIcon d-lg-none' onClick={handleMobileMenu}>
+                            {mobileMenu === null? <i className="lni lni-menu d-block"></i>: <i className="lni lni-close d-block"></i>}
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div className='appBar position-relative'>
+            <div className='appBar position-relative' style={appStore}>
                 <div className='container-fluid'>
                     <div className='d-flex gap-2 justify-content-center align-items-center'>
-                    <Link href=''>
-                        <Image
-                            src={appleStore}
-                            width={120}
-                            alt='Apple Store'
-                        />
-                    </Link>
-                    <Link href=''>
-                        <Image
-                            src={googleStore}
-                            width={120}
-                            alt='Google Store'
-                        />
-                    </Link>
+                        <Link href=''>
+                            <Image
+                                src={appleStore}
+                                width={120}
+                                alt='Apple Store'
+                            />
+                        </Link>
+                        <Link href=''>
+                            <Image
+                                src={googleStore}
+                                width={120}
+                                alt='Google Store'
+                            />
+                        </Link>
                     </div>
                 </div>
-                <div className='closeBtn'><i className="lni lni-cross-circle text-white"></i></div>
+                <div className='closeBtn' onClick={closeAppStore}><i className="lni lni-cross-circle text-white"></i></div>
             </div>
-            
+
         </header>
     )
 }
