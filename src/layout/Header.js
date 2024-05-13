@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 import logo from '@/assets/img/logo.png'
 import placeholder from '@/assets/img/placeholder.png'
@@ -9,6 +10,8 @@ import appleStore from '@/assets/img/app-store-download.png'
 import googleStore from '@/assets/img/google-app-img.png'
 
 export default function Header() {
+    const currentPath = usePathname()
+
     const [announcement, setAnnouncement] = useState({
         display: 'block'
     })
@@ -67,7 +70,7 @@ export default function Header() {
                 <div className='container-fluid'>
                     <div className='d-flex justify-content-between align-items-center'>
                         <div className='logo'>
-                            <Link href="#">
+                            <Link href="/">
                                 <Image
                                     src={logo}
                                     width={115}
@@ -76,11 +79,12 @@ export default function Header() {
                             </Link>
                         </div>
                         <div className={`navBox ${mobileMenu}`}>
+                        
                             <ul className='d-lg-flex'>
-                                <li><Link href="#">The Breweries</Link></li>
-                                <li><Link href="#">Upcoming Events</Link></li>
-                                <li><Link href="#">Brewery Pricing</Link></li>
-                                <li><Link href="#">Advertise</Link></li>
+                                <li><Link href="/the-breweries" className={`${currentPath === '/the-breweries' ? 'active' : ''}`} >The Breweries</Link></li>
+                                <li><Link href="/upcoming-events" className={`${currentPath === '/upcoming-events' ? 'active' : ''}`} >Upcoming Events</Link></li>
+                                <li><Link href="/subscription" className={`${currentPath === '/subscription' ? 'active' : ''}`}>Brewery Pricing</Link></li>
+                                <li><Link href="/advertise" className={`${currentPath === '/advertise' ? 'active' : ''}`}>Advertise</Link></li>
                                 <li><Link href="#">My Account</Link></li>
                                 <li><Link href="#">Log Out</Link></li>
                             </ul>

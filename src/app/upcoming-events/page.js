@@ -3,19 +3,19 @@
 import BreweryItem from "@/components/BreweryItem";
 import Image from "next/image";
 import ads from '@/assets/img/ads.jpg'
-import HomeSearch from "@/components/HomeSearch";
+import UpcomingSearch from "@/components/UpcomingSearch";
 import GoogleMap from "@/components/GoogleMap";
 import Link from "next/link";
-export default function Home() {
+export default function Page() {
 
   return (
-    <main>
+    <>
 
       <GoogleMap />
 
       <div>
         <div className="container">
-          <HomeSearch />
+          <UpcomingSearch />
         </div>
       </div>
 
@@ -24,24 +24,16 @@ export default function Home() {
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-9">
-              <div className="borderHeading mb-5">
-                <h2 className="text-uppercase mb-0">SHOWING 1 - 15 OF 7294 BREWERIES FOUND.</h2>
-              </div>
-              <div className="mb-5">
-                <div className="mb-3">
-                  <BreweryItem />
-                  <BreweryItem />
-                  <BreweryItem />
-                  <BreweryItem />
-                  <BreweryItem />
-                </div>
-                <div className="text-center"><Link href='#' className="btn btn-primary">Load More</Link></div>
+              <div className="borderHeading d-flex gap-3 mb-5 align-items-center mb-4">
+                <h2 className="text-uppercase mb-0">SHOWING 0 - 0 OF 0 EVENTS FOUND.</h2>
+                <div className="text-center"><Link href='#' className="btn btn-primary">SORT LIST BY
+                </Link></div>
               </div>
 
-              <div className="borderHeading d-flex gap-3 mb-5 align-items-center">
-                <h2 className="text-uppercase mb-0">MAYBE THEY'RE JUST NOT OPEN ON THIS DAY</h2>
-                <div className="text-center"><Link href='/the-breweries' className="btn btn-primary">Check here</Link></div>
-              </div>
+              <h3 className="text-muted">Sorry, but it seems like there are no upcoming events near you.
+              </h3>
+
+
 
             </div>
             <div className="col-md-3">
@@ -77,6 +69,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </main>
+    </>
   );
 }

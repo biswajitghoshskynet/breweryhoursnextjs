@@ -6,10 +6,10 @@ import ads from '@/assets/img/ads.jpg'
 import HomeSearch from "@/components/HomeSearch";
 import GoogleMap from "@/components/GoogleMap";
 import Link from "next/link";
-export default function Home() {
+export default function Page() {
 
   return (
-    <main>
+    <>
 
       <GoogleMap />
 
@@ -39,8 +39,8 @@ export default function Home() {
               </div>
 
               <div className="borderHeading d-flex gap-3 mb-5 align-items-center">
-                <h2 className="text-uppercase mb-0">MAYBE THEY'RE JUST NOT OPEN ON THIS DAY</h2>
-                <div className="text-center"><Link href='/the-breweries' className="btn btn-primary">Check here</Link></div>
+                <h2 className="text-uppercase mb-0">DON’T SEE THE BREWERY YOU’RE LOOKING FOR?</h2>
+                <div className="text-center"><Link href='#' className="btn btn-primary">Add it Here</Link></div>
               </div>
 
             </div>
@@ -77,6 +77,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </main>
+    </>
   );
 }

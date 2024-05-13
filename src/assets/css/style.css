@@ -18,7 +18,7 @@ button {
 
 body {
     height: 100vh;
-    font-size: 14px;
+    font-size: 18px;
     color: #000;
     letter-spacing: 0.03em;
     font-family: 'Brandon Grotesque Regular';
@@ -59,6 +59,7 @@ a {
     color: inherit;
 }
 
+
 ul {
     list-style: none;
     margin: 0;
@@ -75,6 +76,7 @@ h1,
     font-size: 42px;
     font-weight: 500;
 }
+
 
 h2,
 .h2 {
@@ -174,6 +176,23 @@ hr {
 
     padding: 8px 15px;
 
+}
+
+.btn-link {
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffbb34;
+}
+
+.btn-link:hover {
+    color: #000;
+}
+
+.btn-link i.lni {
+    font-size: 16px;
 }
 
 .btn.roundIconBtn {
@@ -307,6 +326,10 @@ hr {
     color: #ffbb34 !important;
 }
 
+.text-muted {
+    color: #b9b9b9 !important;
+}
+
 .text-success {
     color: #01c851 !important;
 }
@@ -362,7 +385,8 @@ hr {
     display: block;
 }
 
-.navBox li a:hover {
+.navBox li a:hover,
+.navBox li a.active {
     color: #000;
 }
 
@@ -533,13 +557,16 @@ footer {
     right: 0;
     margin-top: -17px;
 }
-.googleMap{
+
+.googleMap {
     aspect-ratio: 1/.4;
     background-color: #e7e7e7;
 }
-.homeSearch{
+
+.homeSearch {
     margin-top: -115px;
 }
+
 .mapText {
     font-size: 50px;
     position: absolute;
@@ -550,6 +577,175 @@ footer {
     transform: translateY(-50%);
     color: #dddddd;
 }
+
+.searchFormBottom {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+select.form-control.rangeDropDown {
+    background-color: #f3b818;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    background-image: url(../img/dropdown-arrow.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    color: #fff;
+}
+
+.visitorImg {
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+    min-width: 40px;
+    max-width: 40px;
+}
+
+.visitorImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.innerbanner h1 {
+    font-size: 65px;
+    line-height: 1em;
+
+}
+.visitorList .visitorImg{
+    min-width: 55px;
+    max-width: 55px;
+}
+.visitorList li{
+    border-bottom: solid 1px #ededed;
+    padding: 10px 0;
+}
+.visitorList li:last-child{
+    border: none;
+}
+
+
+.innerBannerDes {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.yellowTable table thead th {
+    text-transform: uppercase;
+    background-color: #f3b818;
+    color: #fff;
+    font-size: 16px;
+    padding: 14px;
+    vertical-align: top;
+}
+
+.subscriptionBox {
+    background: #fff;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, .05);
+    -webkit-box-shadow: 0 0px 15px rgba(0, 0, 0, .05);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.subscriptionBox.active .subscriptionBoxHead {
+    background-color: #f1ae1c;
+}
+
+.subscriptionBoxHead {
+    font-weight: 500;
+    background-color: #d0d0cf;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: normal;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.subscriptionBoxHead p {
+    color: #fff;
+    font-size: 13px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 3px;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.subscriptionPrice {
+    display: block;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.subscriptionBoxBody {
+    padding: 30px 20px;
+}
+
+.subscriptionBoxBody ul li {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: left;
+    position: relative;
+    padding-left: 26px;
+}
+
+.subscriptionBoxBody ul li:before {
+    content: '\2713';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    color: #f1ae1c;
+    font-size: 20px;
+}
+
+.subscriptionBoxFooter {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #f1f1f1;
+}
+
+.modal-content:before {
+    content: '';
+    border-top: solid 10px #f3b818;
+    border-radius: 6px 6px 0 0;
+}
+
+.modal-content .btn-close {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    height: 18px;
+    width: 18px;
+    background: #fff;
+    opacity: 1;
+    border-radius: 50%;
+    color: #000;
+    z-index: 2;
+}
+
+.modal-content .btn-close i.lni {
+    font-size: 12px;
+    line-height: normal;
+    display: block;
+}
+
 @media (max-width: 1600px) {
     .container-fluid {
         padding: 0px 60px;
@@ -621,6 +817,7 @@ footer {
         font-size: 16px;
         line-height: 1.5em;
     }
+
     .formBoxHold::after {
 
         margin-top: -22px;
@@ -713,14 +910,27 @@ footer {
         font-size: 30px;
         color: #fff;
     }
+
     .formBoxHold::after {
         margin-top: -25px;
         background-size: 992px auto;
+    }
+
+    .innerbanner h1 {
+        font-size: 44px;
     }
 }
 
 
 @media (max-width: 767.98px) {
+    body {
+        font-size: 16px;
+    }
+
+    .yellowTable table thead th {
+        font-size: 14px;
+    }
+
     .container-fluid {
         padding: 0px 25px;
     }
@@ -747,12 +957,30 @@ footer {
     .footerLinks li {
         margin-bottom: 8px;
     }
+
     .formBoxHold::after {
         margin-top: -32px;
         background-size: 575px auto;
     }
+
     .formBox {
         padding: 30px;
+    }
+
+    .innerbanner h1 {
+        font-size: 35px;
+    }
+
+    .innerBannerImg {
+        overflow: hidden;
+    }
+
+    .innerBannerImg img {
+        max-width: inherit;
+        width: 900px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
@@ -761,4 +989,5 @@ footer {
         margin-top: -35px;
         background-size: 370px auto;
     }
+
 }
