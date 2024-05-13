@@ -16,7 +16,7 @@ export default function Page() {
                 <div className="container">
 
                     <h2 className="text-uppercase">Terms of Service</h2>
-                    <p class="tg-last-updated-date">Last updated: Oct 6, 2022 10:04 PM</p><p>Please read this Terms of Service ("Terms," "Terms of Service") carefully before using the Brewery Hours Application (the "Application") operated by Brewery Hours, a(n) Corporation formed in Georgia, United States  ("us," "we," "our") as this Terms of Service contains important information regarding limitations of our liability. Your access to and use of this Application is conditional upon your acceptance of and compliance with these Terms. These Terms apply to everyone, including but not limited to visitors, users and others, who wish to access and use the Application.</p>
+                    <p class="tg-last-updated-date">Last updated: Oct 6, 2022 10:04 PM</p><p>Please read this Terms of Service ("Terms", "Terms of Service") carefully before using the Brewery Hours Application (the "Application") operated by Brewery Hours, a(n) Corporation formed in Georgia, United States  ("us","we","our") as this Terms of Service contains important information regarding limitations of our liability. Your access to and use of this Application is conditional upon your acceptance of and compliance with these Terms. These Terms apply to everyone, including but not limited to visitors, users and others, who wish to access and use the Application.</p>
 
                     <p>By accessing or using the Application, you agree to be bound by these Terms. If you disagree with any part of the Terms, then you do not have our permission to access or use the Application.</p>
 

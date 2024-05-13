@@ -17,7 +17,7 @@ export default function Page() {
 
                     
                         <h2 className="text-uppercase">Privacy Policy</h2>
-                        <p>Last updated: Jul 6, 2023 10:15 AM</p><p>We value your privacy very highly. Please read this Privacy Policy carefully before using the Brewery Hours Application (the "Application") operated by Brewery Hours, a(n) Corporation formed in Georgia, United States  ("us," "we," "our") as this Privacy Policy contains important information regarding your privacy and how we may use the information we collect about you.</p>
+                        <p>Last updated: Jul 6, 2023 10:15 AM</p><p>We value your privacy very highly. Please read this Privacy Policy carefully before using the Brewery Hours Application (the "Application") operated by Brewery Hours, a(n) Corporation formed in Georgia, United States  ("us", "we", "our") as this Privacy Policy contains important information regarding your privacy and how we may use the information we collect about you.</p>
 
                         <p>Your access to and use of the Application is conditional upon your acceptance of and compliance with this Privacy Policy. This Privacy Policy applies to everyone, including, but not limited to: visitors, users, and others, who wish to access or use the Application.</p>
 
