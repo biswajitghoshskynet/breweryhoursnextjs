@@ -39,7 +39,7 @@ export default function Home() {
               </div>
 
               <div className="borderHeading d-flex gap-3 mb-5 align-items-center">
-                <h2 className="text-uppercase mb-0">MAYBE THEY'RE JUST NOT OPEN ON THIS DAY</h2>
+                <h2 className="text-uppercase mb-0">MAYBE THEY&apos;RE JUST NOT OPEN ON THIS DAY</h2>
                 <div className="text-center"><Link href='/the-breweries' className="btn btn-primary">Check here</Link></div>
               </div>
 

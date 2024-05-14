@@ -17,7 +17,8 @@ export default function Page() {
 
                     
                         <h2 className="text-uppercase">Privacy Policy</h2>
-                        <p>Last updated: Jul 6, 2023 10:15 AM</p><p>We value your privacy very highly. Please read this Privacy Policy carefully before using the Brewery Hours Application (the "Application") operated by Brewery Hours, a(n) Corporation formed in Georgia, United States  ("us", "we", "our") as this Privacy Policy contains important information regarding your privacy and how we may use the information we collect about you.</p>
+                        <p>Last updated: Jul 6, 2023 10:15 AM</p>
+                        <p>We value your privacy very highly. Please read this Privacy Policy carefully before using the Brewery Hours Application (the &quot;Application&quot;) operated by Brewery Hours, a(n) Corporation formed in Georgia, United States  (&quot;us&quot;, &quot;we&quot;, &quot;our&quot;) as this Privacy Policy contains important information regarding your privacy and how we may use the information we collect about you.</p>
 
                         <p>Your access to and use of the Application is conditional upon your acceptance of and compliance with this Privacy Policy. This Privacy Policy applies to everyone, including, but not limited to: visitors, users, and others, who wish to access or use the Application.</p>
 
@@ -125,7 +126,7 @@ export default function Page() {
                         <p>A cookie is a small piece of data sent from a application and stored on your device by your browser. This Application collects cookies. Please visit our Cookie Policy to learn more about what cookies we collect, why we collect them, and how to change your cookie settings.</p>
                     
 
-                        <h2 className="text-center text-uppercase">Children's privacy</h2>
+                        <h2 className="text-center text-uppercase">Children&apos;s privacy</h2>
                         <p>This Application is intended for use by a general audience and does not offer services to children. Should a child whom we know to be under 18 send personal information to us, we will use that information only to respond to that child to inform him or her that they cannot use this Application.</p>
                
 
@@ -146,7 +147,7 @@ export default function Page() {
 
                   
                         <h2 className="text-center text-uppercase">Do Not Track</h2>
-                        <p>Do Not Track is a preference you can set on your browser to inform websites that you do not want to be tracked. We do not support Do Not Track ("DNT"). You can either enable or disable Do Not Track by visiting the Preferences or Settings page of your browser.</p>
+                        <p>Do Not Track is a preference you can set on your browser to inform websites that you do not want to be tracked. We do not support Do Not Track (&quot;DNT&quot;). You can either enable or disable Do Not Track by visiting the Preferences or Settings page of your browser.</p>
                 
 
                   
