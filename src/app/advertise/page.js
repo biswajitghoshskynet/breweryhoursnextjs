@@ -9,7 +9,7 @@ export default function Page() {
 
     return (
         <>
-            <InnerBanner img={BannerImg} title="Advertise" des="LEVERAGE BREWERY HOURS' EXTENSIVE DATA" />
+            <InnerBanner img={BannerImg} title="Advertise" des="LEVERAGE BREWERY HOURS EXTENSIVE DATA" />
             <div className="p-10">
                 <div className="container text-center">
                     <h2 className="h1 text-uppercase mb-4">ADVERTISE</h2>
