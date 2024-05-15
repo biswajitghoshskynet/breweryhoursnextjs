@@ -17,7 +17,7 @@ export default function InnerBanner({ img, title, des }) {
                     <div className='row'>
                         <div className='col-md-9'>
                             <h1 className='text-white fw-regular mb-05'>{title}</h1>
-                            <h3 className='mb-0 text-white'>{des}</h3>
+                            <h3 className='mb-0 text-white text-uppercase'>{des}</h3>
                         </div>
                     </div>
                 </div>

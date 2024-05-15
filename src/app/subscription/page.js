@@ -31,6 +31,8 @@ export default function Page() {
                                     <li>Respond to reviews</li>
                                     <li>Receive <em>weekly</em> reports to see how much exposure and activity your brewery has had on Brewery Hours</li>
                                 </ul>'
+                                linkUrl="#"
+                                linkLabel="Subscribe"
                             />
                         </div>
                     </div>

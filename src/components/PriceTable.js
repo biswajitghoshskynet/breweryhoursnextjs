@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import InnerHTML from 'dangerously-set-html-content'
 
-export default function PriceTable({title,price,des}) {
+export default function PriceTable({title,price,des, linkLabel, linkUrl}) {
     return (
         <>
             <div className="subscriptionBox ">
@@ -14,7 +14,7 @@ export default function PriceTable({title,price,des}) {
                     <InnerHTML html={des}/>
                 </div>
                 <div className="subscriptionBoxFooter">
-                    <a href="#" className="btn btn-primary">Subscribe</a>
+                    <a href={linkUrl} className="btn btn-primary">{linkLabel}</a>
                 </div>
             </div>
         </>

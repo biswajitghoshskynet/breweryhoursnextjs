@@ -83,10 +83,10 @@ export default function Header() {
                             <ul className='d-lg-flex'>
                                 <li><Link href="/the-breweries" className={`${currentPath === '/the-breweries' ? 'active' : ''}`} >The Breweries</Link></li>
                                 <li><Link href="/upcoming-events" className={`${currentPath === '/upcoming-events' ? 'active' : ''}`} >Upcoming Events</Link></li>
-                                <li><Link href="/subscription" className={`${currentPath === '/subscription' ? 'active' : ''}`}>Brewery Pricing</Link></li>
+                                <li><Link href="/brewery-pricing" className={`${currentPath === '/subscription' ? 'active' : ''}`}>Brewery Pricing</Link></li>
                                 <li><Link href="/advertise" className={`${currentPath === '/advertise' ? 'active' : ''}`}>Advertise</Link></li>
-                                <li><Link href="#">My Account</Link></li>
-                                <li><Link href="#">Log Out</Link></li>
+                                <li><Link href="/profile" className={`${currentPath === '/profile' ? 'active' : ''}`}>My Account</Link></li>
+                                <li><Link href="/login" className={`${currentPath === '/login' ? 'active' : ''}`}>Login/Signup</Link></li>
                             </ul>
                         </div>
                         <div className='menuIcon d-lg-none' onClick={handleMobileMenu}>

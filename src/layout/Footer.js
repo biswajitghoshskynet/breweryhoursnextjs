@@ -61,7 +61,7 @@ export default function Footer() {
                     </div>
                     <h5 className='fw-regular text-white mb-2'>© 2024 BREWERY HOURS. ALL RIGHTS RESERVED. WEBSITE DESIGN + DEVELOPMENT BY JASONHUNTER DESIGN.</h5>
                     <ul className='d-flex flex-wrap flex-md-nowrap flex footerLinks align-items-center justify-content-center fw-regular text-white h5 mb-0 text-center'>
-                        <li><Link href='#'>MARKETING COLLATERAL</Link></li>
+                        <li><Link href='/marketing-collateral'>MARKETING COLLATERAL</Link></li>
                         <li><Link href='/site-map'>SITE MAP</Link></li>
                         <li><Link href='/privacy-policy'>PRIVACY POLICY </Link> </li>
                         <li><Link href='/terms-of-service'>TERMS & CONDITIONS</Link></li>

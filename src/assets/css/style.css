@@ -109,7 +109,7 @@ h6,
 }
 
 hr {
-    margin: 40px 0 50px 0;
+    margin: 30px 0 40px 0;
     opacity: 0.8;
     border-color: #dce9ee;
 }
@@ -164,6 +164,15 @@ hr {
     white-space: nowrap;
 }
 
+.btn i.lni {
+    font-size: 18px;
+}
+
+.btn.btn-lg {
+    padding: 15px 25px;
+    font-size: 14px;
+}
+
 .btn.btn-icon {
     padding: 10.2px 12px;
 }
@@ -173,9 +182,27 @@ hr {
 }
 
 .btn.btn-sm {
-
     padding: 8px 15px;
+}
 
+.btn-fb {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.btn-fb:hover {
+    background-color: #49639d;
+    color: #fff;
+}
+
+.btn-ios {
+    background-color: #000000;
+    color: #fff;
+}
+
+.btn-ios:hover {
+    background-color: #232323;
+    color: #fff;
 }
 
 .btn-link {
@@ -309,7 +336,9 @@ hr {
 .bg-primary {
     background-color: #f3b818 !important;
 }
-
+.text-bg-primary{
+    background-color: #f3b818 !important;
+}
 .bg-success {
     background-color: #01c851 !important;
 }
@@ -341,7 +370,19 @@ hr {
 .text-warning {
     color: #ffbb34 !important;
 }
-
+.badge{
+    font-family: 'Brandon Grotesque Regular';
+    font-weight: normal;
+}
+.badge.round{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0;
+    text-align: center;
+    font-size: 13px;
+}
 .announcementBar {
     position: relative;
     padding: 10px 30px 10px 15px;
@@ -387,8 +428,9 @@ hr {
 
 .navBox li a:hover,
 .navBox li a.active {
-    color: #000;
+    color: #59450f;
 }
+
 
 .appBar {
     position: relative;
@@ -461,7 +503,10 @@ footer {
 .footerLinks li {
     display: flex;
     align-items: center;
+}
 
+.footerLinks li a:hover {
+    color: #59450f;
 }
 
 .footerLinks li:last-child::after {
@@ -615,15 +660,18 @@ select.form-control.rangeDropDown {
     line-height: 1em;
 
 }
-.visitorList .visitorImg{
+
+.visitorList .visitorImg {
     min-width: 55px;
     max-width: 55px;
 }
-.visitorList li{
-    border-bottom: solid 1px #ededed;
+
+.visitorList li {
+    border-bottom: solid 1px #f5f5f5;
     padding: 10px 0;
 }
-.visitorList li:last-child{
+
+.visitorList li:last-child {
     border: none;
 }
 
@@ -636,14 +684,7 @@ select.form-control.rangeDropDown {
     transform: translateY(-50%);
 }
 
-.yellowTable table thead th {
-    text-transform: uppercase;
-    background-color: #f3b818;
-    color: #fff;
-    font-size: 16px;
-    padding: 14px;
-    vertical-align: top;
-}
+
 
 .subscriptionBox {
     background: #fff;
@@ -746,6 +787,96 @@ select.form-control.rangeDropDown {
     display: block;
 }
 
+.thumbBox {
+    border: solid 1px #f5f5f5;
+}
+
+.thumbDes {
+    padding: 10px;
+    border-top: solid 1px #f5f5f5;
+}
+
+.thumbBoxImg {
+    aspect-ratio: 1/.65;
+}
+
+.thumbBoxImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titleBorder {
+    background-color: #e5e5e5;
+    height: 1px;
+}
+
+.profileLeft {
+    min-width: 350px;
+    max-width: 350px;
+    border-right: solid 1px #f5f5f5;
+    padding-right: 30px;
+}
+
+.profileRight {
+    padding-left: 30px;
+}
+
+.profileImg {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.roundBox {
+    border: solid 1px #f5f5f5;
+    border-radius: 6px;
+    padding: 24px;
+}
+
+.listItem {
+    border: solid 1px #f5f5f5;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 5px;
+
+}
+
+.listItem .visitorImg {
+    min-width: 50px;
+    max-width: 50px;
+}
+.inviteFrndBox i.lni{
+    font-size: 50px;
+}
+table.table thead th {
+    text-transform: uppercase;
+    background-color: #f3b818;
+    color: #fff;
+    font-size: 16px;
+    padding: 14px;
+    vertical-align: top;
+}
+
+.table > :not(caption) > * > *, .table-bordered > :not(caption) > * {
+    border-color: #f5f5f5;
+}
+.table > :not(caption) > * > * {
+    padding: 12px;
+    vertical-align: middle;
+}
+table.table tr:last-child td{
+    border-radius: 0 0 5px 5px;
+}
+.table > thead{
+    vertical-align: top;
+}
+ 
 @media (max-width: 1600px) {
     .container-fluid {
         padding: 0px 60px;
@@ -823,11 +954,30 @@ select.form-control.rangeDropDown {
         margin-top: -22px;
         background-size: 1199px auto;
     }
+
+    .profileLeft {
+        min-width: 270px;
+        max-width: 270px;
+        padding-right: 20px;
+    }
+
+    .profileRight {
+        padding-left: 20px;
+    }
+
+    .roundBox {
+        padding: 17px;
+    }
 }
 
 @media (max-width: 991.98px) {
     .mb-10 {
         margin-bottom: 60px !important;
+    }
+
+    .btn.btn-lg {
+        padding: 15px 25px;
+        font-size: 12px;
     }
 
     h2,
@@ -919,6 +1069,12 @@ select.form-control.rangeDropDown {
     .innerbanner h1 {
         font-size: 44px;
     }
+
+    .profileLeft {
+        min-width: 230px;
+        max-width: 230px;
+    }
+
 }
 
 
@@ -927,9 +1083,7 @@ select.form-control.rangeDropDown {
         font-size: 16px;
     }
 
-    .yellowTable table thead th {
-        font-size: 14px;
-    }
+    
 
     .container-fluid {
         padding: 0px 25px;
@@ -981,6 +1135,33 @@ select.form-control.rangeDropDown {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    .profileLeft {
+        max-width: inherit;
+        min-width: inherit;
+        border: none;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .profileRight {
+        padding: 0;
+    }
+
+    .roundBox {
+        padding: 24px;
+    }
+
+    .profileImgBlock {
+        max-width: 300px;
+        margin: 0 auto 30px auto;
+    }
+    .inviteFrndBox i.lni{
+        font-size: 35px;
+    }
+    table.table thead th {
+        font-size: 14px;
     }
 }
 
