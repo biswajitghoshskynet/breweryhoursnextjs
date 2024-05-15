@@ -25,7 +25,7 @@ export default function Page() {
 
                     <div className="text-center mb-5">
                         <h1 className="text-uppercase">brewery hours resources</h1>
-                        <h3>It's all about our posters, banners, logo, and images</h3>
+                        <h3>It&apos;s all about our posters, banners, logo, and images</h3>
                     </div>
 
                     <div className="mb-5">

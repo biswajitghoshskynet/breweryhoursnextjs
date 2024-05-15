@@ -138,7 +138,7 @@ export default function Page() {
                             </div>
 
                             <div className="mb-5">
-                                <h3 className="text-uppercase fw-medium mb-3">BREWERIES YOU'VE VISITED</h3>
+                                <h3 className="text-uppercase fw-medium mb-3">BREWERIES YOU&apos;VE VISITED</h3>
                                 <UserVisitedBrewerie brewerie="Brewery Hours HQ" visit="2" />
                                 <UserVisitedBrewerie brewerie="Whitewall Brewing Company" visit="8" />
                             </div>

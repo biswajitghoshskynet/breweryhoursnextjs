@@ -25,7 +25,7 @@ export default function Page() {
                     <div className="row justify-content-center mb-5">
                         <div className="col-lg-11 col-xl-10  text-center">
                             <h2 className="h1 text-uppercase">Business Login</h2>
-                            <p>Once you've created your account, you'll be able to modify your Brewery Name, Address, Phone Number, Website, and Social links. More importantly, you'll be able to enter your normal hours of operation, and override them with your temporary hours, or even special hours on specific days.</p>
+                            <p>Once you&apos;ve created your account, you&apos;ll be able to modify your Brewery Name, Address, Phone Number, Website, and Social links. More importantly, you&apos;ll be able to enter your normal hours of operation, and override them with your temporary hours, or even special hours on specific days.</p>
                         </div>
                     </div>
 
