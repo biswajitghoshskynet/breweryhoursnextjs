@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-      <NextTopLoader color="#f3b818"/>
+      <NextTopLoader color="#fff" zIndex={1600}/>
         <Header/>
         {children}
         <Footer/>

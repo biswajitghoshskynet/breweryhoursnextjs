@@ -42,7 +42,7 @@ export default function Page() {
                                 des='<p>Keep using the all the features from your TASTER trial period, plus...</p>
 
                                 <ul>
-                                    <li><strong>Update info across 150+ sites like Google and Yelp in just a few clicks. Learn more.</strong></li>
+                                    <li><strong>Update info across 150+ sites like Google and Yelp in just a few clicks. <a href="/knowledge-graph" class="text-primary">Learn more.</a></strong></strong></li>
                                     <li>Offer incentives for customer check-ins</li>
                                     <li>Ability to send push notifications to your followers (iOS users only, for now)</li>
                                     <li>Import your Facebook events</li>

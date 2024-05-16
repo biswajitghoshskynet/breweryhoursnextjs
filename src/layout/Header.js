@@ -85,6 +85,7 @@ export default function Header() {
                                 <li><Link href="/upcoming-events" className={`${currentPath === '/upcoming-events' ? 'active' : ''}`} >Upcoming Events</Link></li>
                                 <li><Link href="/brewery-pricing" className={`${currentPath === '/subscription' ? 'active' : ''}`}>Brewery Pricing</Link></li>
                                 <li><Link href="/advertise" className={`${currentPath === '/advertise' ? 'active' : ''}`}>Advertise</Link></li>
+                                <li><Link href="/manage-your-venue" className={`${currentPath === '/manage-your-venue' ? 'active' : ''}`}>Manage Your Venue</Link></li>
                                 <li><Link href="/profile" className={`${currentPath === '/profile' ? 'active' : ''}`}>My Account</Link></li>
                                 <li><Link href="/login" className={`${currentPath === '/login' ? 'active' : ''}`}>Login/Signup</Link></li>
                             </ul>

@@ -10,17 +10,20 @@ export default function BreweryItem() {
         <>
             <div className='breweryBox mb-2'>
                 <div className='d-flex align-items-center gap-4'>
+
                     <div className='breweryBoxImg fixImg'>
-                        <Image
-                            src={placeholder}
-                            width={300}
-                            alt='Profile'
-                        />
+                        <Link href="/brewery/detailsname">
+                            <Image
+                                src={placeholder}
+                                width={300}
+                                alt='Profile'
+                            />
+                        </Link>
                     </div>
                     <div className='breweryBoxDes'>
                         <div className='d-flex flex-column flex-lg-row justify-content-between mb-3'>
                             <div className='breweryBoxDesTop'>
-                                <h4 className='uppercase text-primary mb-1'>FERAL BREWING COMPANY</h4>
+                                <h4 className='uppercase text-primary mb-1'><Link href="/brewery/detailsname">FERAL BREWING COMPANY</Link></h4>
                                 <div className='d-flex gap-1 align-items-center'>
                                     <div className='d-flex'>
                                         <i className="lni lni-star-fill d-block text-primary"></i>
@@ -105,7 +108,7 @@ export default function BreweryItem() {
                                 </li>
                                 <li>
                                     <SmallModal modalID="visitorModal" linkLabel={`<div class="text-primary btn-link">View More<i class="lni lni-angle-double-right"></i></div>`} />
-                                  
+
                                 </li>
                             </ul>
                         </div>

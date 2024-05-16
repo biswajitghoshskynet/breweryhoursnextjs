@@ -27,7 +27,7 @@ export default function Page() {
                             <h2 className="h1 text-uppercase">User Login</h2>
                             <p>Take advantage of the full Brewery Hours experience with your own free account!
                                 Check in, leave reviews, receive special offers from your favorite breweries, and much more.</p>
-                            <p>Are you a brewery? <Link href="#" className="text-primary">Click here</Link> to open a business account.</p>
+                            <p>Are you a brewery? <Link href="/business-login" className="text-primary">Click here</Link> to open a business account.</p>
                         </div>
                     </div>
 
